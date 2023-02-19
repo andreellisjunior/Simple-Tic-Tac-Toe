@@ -38,12 +38,18 @@ const playerHasWon = () => {
       return true;
     }
   }
-  //from bottom check up and across
+  //from bottom right check up and across
   if (spaces[8] === currentPlayer) {
     if (spaces[2] === currentPlayer && spaces[5] === currentPlayer) {
       return true;
     }
     if (spaces[7] === currentPlayer && spaces[6] === currentPlayer) {
+      return true;
+    }
+  }
+  //from bottom left check up
+  if (spaces[6] === currentPlayer) {
+    if (spaces[4] === currentPlayer && spaces[2] === currentPlayer) {
       return true;
     }
   }
