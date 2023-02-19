@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+button#restart {
+  margin-bottom: 50px;
+  margin-top: 25px;
+  background: #44008f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.game-board-wrapper {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-board-wrapper .game-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+  border: 2px solid #44008f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #44008f;
+}
+.box.top {
+  border-top: none;
+}
+.box.bottom {
+  border-bottom: none;
+}
+
+.box.left {
+  border-left: none;
+}
+
+.box.right {
+  border-right: none;
+}
+.box .selection {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+}
